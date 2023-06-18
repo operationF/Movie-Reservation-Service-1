@@ -1,4 +1,4 @@
-package com.moviereservation.domain.movie.repository;
+package com.moviereservation.domain;
 
 import com.moviereservation.domain.movie.domain.Movie;
 import com.moviereservation.domain.movie.dto.MovieRegisterDto;

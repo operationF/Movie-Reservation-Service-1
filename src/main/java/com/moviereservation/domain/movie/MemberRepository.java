@@ -1,4 +1,6 @@
-package com.moviereservation.domain.member;
+package com.moviereservation.domain.movie;
+
+import com.moviereservation.domain.member.Member;
 
 import java.util.Optional;
 

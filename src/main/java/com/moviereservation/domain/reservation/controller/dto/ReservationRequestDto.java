@@ -1,4 +1,4 @@
-package com.moviereservation.domain.movie.reservation.controller.dto;
+package com.moviereservation.domain.reservation.controller.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

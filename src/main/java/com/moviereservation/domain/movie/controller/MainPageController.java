@@ -1,6 +1,6 @@
 package com.moviereservation.domain.movie.controller;
 
-import com.moviereservation.domain.movie.service.MovieService;
+import com.moviereservation.domain.movie.MovieService;
 import com.moviereservation.domain.movie.dto.MoviePreviewDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;

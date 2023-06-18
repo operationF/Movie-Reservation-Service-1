@@ -1,9 +1,9 @@
-package com.moviereservation.domain.movie.reservation;
+package com.moviereservation.domain.reservation;
 
-import com.moviereservation.study.domain.Seat;
-import com.moviereservation.study.domain.SeatStatus;
-import com.moviereservation.study.domain.Seats;
-import com.moviereservation.utils.exception.ReservationNotAllowedException;
+import com.moviereservation.domain.reservation.domain.Seat;
+import com.moviereservation.domain.reservation.domain.SeatStatus;
+import com.moviereservation.domain.reservation.domain.Seats;
+
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.JdbcTemplate;

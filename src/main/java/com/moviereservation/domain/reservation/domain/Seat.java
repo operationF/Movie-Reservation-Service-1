@@ -1,14 +1,6 @@
-package com.moviereservation.study.domain;
+package com.moviereservation.domain.reservation.domain;
 
-import com.moviereservation.domain.member.Gender;
-import com.moviereservation.domain.member.Member;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 import org.springframework.jdbc.core.RowMapper;
 
 @Builder

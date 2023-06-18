@@ -1,6 +1,6 @@
 package com.moviereservation.domain.movie.controller;
 
-import com.moviereservation.domain.movie.service.MovieService;
+import com.moviereservation.domain.movie.MovieService;
 import com.moviereservation.domain.movie.comment.dto.AddCommentDto;
 import com.moviereservation.domain.movie.dto.DetailDto;
 import com.moviereservation.domain.movie.dto.MovieRegisterDto;

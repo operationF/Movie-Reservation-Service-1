@@ -1,4 +1,4 @@
-package com.moviereservation.util;
+package com.moviereservation.utils.advice;
 
 import lombok.NoArgsConstructor;
 

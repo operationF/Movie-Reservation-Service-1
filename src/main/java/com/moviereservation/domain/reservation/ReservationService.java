@@ -1,6 +1,6 @@
-package com.moviereservation.domain.movie.reservation;
+package com.moviereservation.domain.reservation;
 
-import com.moviereservation.study.domain.Seat;
+import com.moviereservation.domain.reservation.domain.Seat;
 import com.moviereservation.utils.exception.ReservationNotAllowedException;
 import lombok.Synchronized;
 import org.apache.logging.log4j.message.AsynchronouslyFormattable;

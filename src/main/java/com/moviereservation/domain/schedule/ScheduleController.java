@@ -1,8 +1,7 @@
 package com.moviereservation.domain.schedule;
 
-import com.moviereservation.domain.movie.domain.Movie;
 import com.moviereservation.domain.movie.dto.MoviePreviewDto;
-import com.moviereservation.domain.movie.service.MovieService;
+import com.moviereservation.domain.movie.MovieService;
 import com.moviereservation.domain.schedule.dto.ScheduleDto;
 import com.moviereservation.domain.schedule.dto.SearchDto;
 import lombok.RequiredArgsConstructor;
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
 import java.util.List;
 
 @Controller

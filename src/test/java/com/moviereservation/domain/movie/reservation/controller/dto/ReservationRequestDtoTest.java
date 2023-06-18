@@ -2,6 +2,7 @@ package com.moviereservation.domain.movie.reservation.controller.dto;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.moviereservation.domain.reservation.controller.dto.ReservationRequestDto;
 import org.junit.jupiter.api.Test;
 
 class ReservationRequestDtoTest {

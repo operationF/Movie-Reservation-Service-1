@@ -1,6 +1,7 @@
-package com.moviereservation.study.domain;
+package com.moviereservation.domain.reservation.domain;
 
 import com.moviereservation.utils.exception.ReservationNotAllowedException;
+
 import java.util.Arrays;
 
 public enum SeatStatus {

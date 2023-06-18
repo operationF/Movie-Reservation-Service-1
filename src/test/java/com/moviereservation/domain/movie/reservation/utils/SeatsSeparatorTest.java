@@ -2,7 +2,7 @@ package com.moviereservation.domain.movie.reservation.utils;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.moviereservation.domain.movie.reservation.utils.SeatsSeparator;
+import com.moviereservation.domain.reservation.utils.SeatsSeparator;
 import com.moviereservation.study.domain.Seat;
 import com.moviereservation.study.domain.SeatStatus;
 import com.moviereservation.study.domain.Seats;

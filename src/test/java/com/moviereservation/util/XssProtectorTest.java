@@ -1,5 +1,6 @@
 package com.moviereservation.util;
 
+import com.moviereservation.utils.advice.XssProtector;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;

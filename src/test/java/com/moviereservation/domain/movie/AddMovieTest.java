@@ -1,9 +1,8 @@
 package com.moviereservation.domain.movie;
 
-import com.moviereservation.domain.movie.repository.JdbcMovieRepository;
+import com.moviereservation.domain.JdbcMovieRepository;
 import com.moviereservation.domain.movie.dto.MovieRegisterDto;
-import com.moviereservation.domain.movie.repository.MovieRepository;
-import com.moviereservation.domain.movie.service.MovieService;
+import com.moviereservation.domain.MovieRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

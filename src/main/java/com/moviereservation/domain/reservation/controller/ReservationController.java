@@ -1,10 +1,10 @@
-package com.moviereservation.domain.movie.reservation.controller;
+package com.moviereservation.domain.reservation.controller;
 
-import com.moviereservation.study.domain.Seat;
-import com.moviereservation.study.domain.SeatStatus;
-import com.moviereservation.study.domain.Seats;
-import com.moviereservation.domain.movie.reservation.controller.dto.ReservationRequestDto;
-import com.moviereservation.study.domain.Theater;
+import com.moviereservation.domain.reservation.domain.Seat;
+import com.moviereservation.domain.reservation.domain.SeatStatus;
+import com.moviereservation.domain.reservation.domain.Seats;
+import com.moviereservation.domain.reservation.controller.dto.ReservationRequestDto;
+import com.moviereservation.domain.reservation.domain.Theater;
 import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

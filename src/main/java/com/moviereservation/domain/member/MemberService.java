@@ -1,6 +1,7 @@
 package com.moviereservation.domain.member;
 
 import com.moviereservation.domain.member.controller.dto.PasswordChangeDto;
+import com.moviereservation.domain.movie.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

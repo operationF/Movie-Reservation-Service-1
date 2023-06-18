@@ -1,8 +1,8 @@
-package com.moviereservation.domain.movie.reservation.utils;
+package com.moviereservation.domain.reservation.utils;
 
-import com.moviereservation.study.domain.Seat;
-import com.moviereservation.study.domain.SeatStatus;
-import com.moviereservation.study.domain.Seats;
+import com.moviereservation.domain.reservation.domain.Seat;
+import com.moviereservation.domain.reservation.domain.SeatStatus;
+import com.moviereservation.domain.reservation.domain.Seats;
 import java.util.ArrayList;
 import java.util.List;
 
