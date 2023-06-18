@@ -1,6 +1,6 @@
 package com.moviereservation.domain.movie.reservation;
 
-import static com.moviereservation.study.domain.SeatStatus.NORMAL;
+import static com.moviereservation.domain.reservation.domain.SeatStatus.NORMAL;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
@@ -9,8 +9,8 @@ import static org.mockito.Mockito.when;
 import com.moviereservation.domain.reservation.ReservationRepository;
 import com.moviereservation.domain.reservation.ReservationService;
 import com.moviereservation.domain.reservation.utils.SeatsSeparator;
-import com.moviereservation.study.domain.Seat;
-import com.moviereservation.study.domain.Seats;
+import com.moviereservation.domain.reservation.domain.Seat;
+import com.moviereservation.domain.reservation.domain.Seats;
 import com.moviereservation.utils.exception.ReservationNotAllowedException;
 import java.util.List;
 import java.util.Stack;

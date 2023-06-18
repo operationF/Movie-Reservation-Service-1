@@ -1,14 +1,15 @@
 package com.moviereservation.domain.movie.reservation;
 
-import static com.moviereservation.study.domain.SeatStatus.NORMAL;
+import static com.moviereservation.domain.reservation.domain.SeatStatus.NORMAL;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+
 
 import com.moviereservation.domain.reservation.JdbcReservationRepository;
 import com.moviereservation.domain.reservation.utils.SeatsSeparator;
 import com.moviereservation.domain.reservation.controller.dto.ReservationRequestDto;
-import com.moviereservation.study.domain.Seat;
-import com.moviereservation.study.domain.Seats;
+import com.moviereservation.domain.reservation.domain.Seat;
+import com.moviereservation.domain.reservation.domain.Seats;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
