@@ -1,15 +1,27 @@
 package com.moviereservation.domain.reservation;
 
 import com.moviereservation.domain.reservation.domain.Seat;
+import com.moviereservation.domain.reservation.domain.Seats;
+import com.moviereservation.domain.reservation.domain.Theater;
+import com.moviereservation.domain.reservation.utils.SeatsSeparator;
 import com.moviereservation.utils.exception.ReservationNotAllowedException;
+import lombok.RequiredArgsConstructor;
 import lombok.Synchronized;
 import org.apache.logging.log4j.message.AsynchronouslyFormattable;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.moviereservation.domain.reservation.JdbcReservationRepository.*;
+
 @Service
+@RequiredArgsConstructor
 public class ReservationService {
+
+    private final ReservationRepository reservationRepository;
 
     @Async
     @Synchronized
@@ -18,10 +30,21 @@ public class ReservationService {
     }
 
 
-    /*public void reserve(long scheduleId, String selected) {
+    public void reserve(long scheduleId, String selected) {
 
-        checkNotAllowedReservation(scheduleId, seat);
+        Seats seats = SeatsSeparator.separate(selected);
+        for(Seat seat : seats.getSeats()) {
+            checkNotAllowedReservation(scheduleId, seat);
+        }
+        reservationRepository.reserve(scheduleId, seats);
+    }
 
+    public Theater getAllSeats(long scheduleId){
+        Theater theater = new Theater(new ArrayList<>());
+        for(int i = 1; i<7; i++){
+            theater.getTheater().add(new Seats(reservationRepository.findByScheduleIdAndColumn(scheduleId, i)));
+        }
+        return theater;
     }
 
     public void checkNotAllowedReservation(long scheduleId, Seat seat) {
@@ -36,7 +59,7 @@ public class ReservationService {
     }
 
     private void checkAlreadyReserved(long scheduleId, Seat seat) {
-        Seat findSeat = findSeat(scheduleId, seat);
+        Seat findSeat = reservationRepository.findSeat(scheduleId, seat);
 
         if (findSeat == null) {
             throw new ReservationNotAllowedException(SEAT_NOT_EXISTS_MESSAGE);
@@ -47,5 +70,5 @@ public class ReservationService {
             throw new ReservationNotAllowedException(String.format(ALREADY_RESERVED_MESSAGE, findSeat.getRow(),
                     findSeat.getColumn()));
         }
-    }*/
+    }
 }
